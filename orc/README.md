@@ -1,1 +1,2 @@
 用于收集并测试orc效果
+pytesseract
