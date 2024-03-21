@@ -1,7 +1,9 @@
 import os
 import platform
 from transformers import AutoTokenizer, AutoModel
-MODEL_PATH = os.environ.get('MODEL_PATH', '..//..//model//ChatGLM3-main//model')
+
+my_model_path = '..//..//model//ChatGLM3-main//model'
+MODEL_PATH = os.environ.get('MODEL_PATH', my_model_path)
 TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 
 tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
