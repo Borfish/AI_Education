@@ -5,8 +5,7 @@ from transformers import AutoTokenizer, AutoModel
 
 stop_stream = False
 
-
-def ocr_write(image_path='', path='./', name='demo.txt', flag=0):
+def ocr_write(model, tokenizer, image_path='', path='./', name='demo.txt', flag=0, save=0):
     reader = easyocr.Reader(['en'])  # this needs to run only once to load the model into memory
     try:
         result = reader.readtext(image_path, detail=0)
@@ -17,19 +16,12 @@ def ocr_write(image_path='', path='./', name='demo.txt', flag=0):
 
     out_path = path + name
     print('正在生成原文')
-    if len(out_str) != 0:
+    if len(out_str)!=0 & save:
         with open(out_path, 'w') as f:
             f.write(out_str)
 
-    print('正在转化原文')
-
     if(flag):
-        my_model_path = '../../model/ChatGLM3-main/model'
-        MODEL_PATH = os.environ.get('MODEL_PATH', my_model_path)
-        TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
-
-        tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
-        model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
+        print('正在转化原文')
 
         # os_name = platform.system()
         # clear_command = 'cls' if os_name == 'Windows' else 'clear'
@@ -55,10 +47,12 @@ def ocr_write(image_path='', path='./', name='demo.txt', flag=0):
                 # print(response[current_length:], end="", flush=True)
                 alter_str = alter_str + response[current_length:]
                 current_length = len(response)
-        if len(alter_str) != 0:
+        if len(alter_str)!=0 & save:
             with open(out_path, 'w') as f:
                 f.write(alter_str)
             print("修改后已保存")
+        return alter_str
+    return out_str
 
 def main():
     # ocr_write('./demo2.jpg')
