@@ -1,0 +1,54 @@
+D:\learning_software\anaconda\envs\ocr_llm\python.exe C:\Users\borfish\Desktop\work_space\AI_Education\demo\all_demo.py 
+Loading checkpoint shards: 100%|██████████| 7/7 [00:08<00:00,  1.25s/it]
+WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
+正在生成原文
+正在转化原文
+正在对可能的错字进行处理
+C:\Users\borfish\.cache\huggingface\modules\transformers_modules\model\modeling_chatglm.py:229: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+  context_layer = torch.nn.functional.scaled_dot_product_attention(query_layer, key_layer, value_layer,
+修改后已保存
+欢迎使用 ChatGLM3-6B 模型，输入内容即可进行对话，clear 清空对话历史，stop 终止程序
+
+ChatGLM：作为英语老师，我很愿意帮助你分析这篇作文。首先，这篇作文的主题明确，即大学英语教育需要进行改革。你通过分析现状，指出了当前大学英语教育存在的问题，如英语教师低估了兴趣在学习中的作用，以及学生主要依赖死记硬背、语法、听、说、读、写等技巧。
+
+在结构上，你采用了分段论述的方式，每个段落都明确表达了你的观点。这种结构清晰，便于读者理解你的观点。
+
+在语言表达上，你使用了大量的连接词和过渡词，如"on the one hand"、"on the other hand"、"therefore"等，使文章的逻辑性更强。同时，你也使用了一些较为复杂的句子结构，如"People ask for English reform mainly because of the inadequacy of college English education under the current system."，这展示了你的语言组织能力。
+
+然而，这篇作文也有一些可以改进的地方。例如，在论述英语教师低估了兴趣在学习中的作用时，可以举一些具体的例子，以使观点更具体、更有说服力。此外，在论述学生主要依赖死记硬背、语法、听、说、读、写等技巧时，也可以举一些具体的例子，以使观点更具体、更有说服力。
+
+总的来说，这是一篇很好的作文，展示了你对大学英语教育现状的深入理解和分析。通过改进一些语言表达和论述方式，你的作文将会更加出色。
+
+用户：People ask for English reform mainly because of the inadequacy of college English education under the current system. 这句话是否有语法错误
+
+ChatGLM：这句话在语法上没有错误，表达清晰，符合英语语法规则。这句话的意思是：“人们主要呼吁英语改革，是因为现行大学英语教育体系存在不足。”
+
+用户：逐句分析这篇作文的每个句子是否有语法错误
+
+ChatGLM：好的，我会逐句分析这篇作文的每个句子是否有语法错误。
+
+1. "As college English education is greatly emphasized with the rapid development of global communication,"
+   这句话在语法上没有错误，但是可以进行一些改进。例如，可以改为"As college English education is greatly emphasized due to the rapid development of global communication,"。
+
+2. "the defects that exist in the current educational system are open to more criticism."
+   这句话在语法上没有错误，但是可以进行一些改进。例如，可以改为"The defects that exist in the current educational system are open to more criticism."。
+
+3. "It is widely acknowledged that thorough reform of college English education should be under way."
+   这句话在语法上没有错误，表达清晰，符合英语语法规则。
+
+4. "People ask for English reform mainly because of the inadequacy of college English education under the current system."
+   这句话在语法上没有错误，但是可以进行一些改进。例如，可以改为"People mainly ask for English reform because of the inadequacy of college English education under the current system."。
+
+5. "On the one hand, many college English teachers underestimate the role interest plays in English learning and keep preaching in class."
+   这句话在语法上没有错误，但是可以进行一些改进。例如，可以改为"On the one hand, many college English teachers underestimate the role that interest plays in English learning and continue to preach in class."。
+
+6. "On the other hand, most Chinese students tend to rely on rote vocabulary memorizing, grammar, listening, speaking, reading, and writing from each other, and therefore their English is also broken in this way."
+   这句话在语法上没有错误，但是可以进行一些改进。例如，可以改为"On the other hand, most Chinese students tend to rely on rote memorization of vocabulary, memorization of grammar rules, listening, speaking, reading, and writing from each other, and therefore their English is also broken down in this way."。
+
+总结：在这篇作文中，所有的句子在语法上都没有错误，表达清晰，符合英语语法规则。
+
+用户：As college English education is greatly emphasized with the rapid development of global communication,为什么改为As college English education is greatly emphasized due to the rapid development of global communication,"会更好
+
+ChatGLM：你的建议是正确的。"As college English education is greatly emphasized due to the rapid development of global communication," 这样的表达方式更为准确和流畅。原句 "As college English education is greatly emphasized with the rapid development of global communication," 中的 "with" 是不必要的，因为 "due to" 已经表达了这个意思。所以，修改后的句子更符合英语语法和表达习惯。
+
+用户：
